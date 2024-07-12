@@ -9,6 +9,7 @@
     --list-item-checked-color: #555;
     --span-text-color: #555;
     --span-hover-bg-color: #edeef0;
+    --button-hover-bg-color: #b289e8;
 }
 
 * {
@@ -44,6 +45,11 @@
 .todoapp h2 img {
     width: 30px;
     margin-left: 10px;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.todoapp h2 img:hover {
+    transform: translateX(2px);
 }
 
 .row {
@@ -73,6 +79,12 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+button:hover {
+    background: var(--button-hover-bg-color);
+    transform: translateX(-2px);
 }
 
 ul li {

@@ -4,7 +4,7 @@ const listContainer = document.getElementById("list-container");
 // Function to add a task to the list
 const addTask = () => {
     if(inputBox.value === '') {
-        alert("You must write something!"); // Alert if input is empty
+        alert("Please enter a task before adding it to the list."); // Alert if input is empty
     } else {
         let li = document.createElement("li"); // Create a new list item
         li.innerHTML = inputBox.value; // Set the list item's text to the input value
